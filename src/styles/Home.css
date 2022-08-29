@@ -6,7 +6,7 @@
 }
 
 .about {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 150px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,7 +14,7 @@
   text-align: center;
   background-color: #21325e;
   color: #f0f0f0;
-  padding: 36px;
+  padding: 0 36px 50px;
 }
 
 .about h2 {

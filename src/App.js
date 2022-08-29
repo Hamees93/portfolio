@@ -16,7 +16,7 @@ function App() {
       <ScrollProgress />
       <Navbar />
       <AnimatePresence mode="wait">
-        <Routes>
+        <Routes location={location} key={location.path}>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/project/:id" element={<ProjectDisplay />} />

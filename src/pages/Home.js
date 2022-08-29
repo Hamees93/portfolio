@@ -1,12 +1,42 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
 import GithubIcon from "@material-ui/icons/GitHub";
 import "../styles/Home.css";
 import AnimatedPage from "../components/AnimatedPage";
-import { motion } from "framer-motion";
+import {
+  animationControls,
+  motion,
+  useAnimation,
+  useInView,
+} from "framer-motion";
 
 function Home() {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      animation.start({
+        x: 0,
+        opacity: 1,
+        transition: {
+          type: "spring",
+          duration: 1,
+          bounce: 0.3,
+        },
+      });
+    }
+    if (!isInView) {
+      animation.start({
+        x: -100,
+        opacity: 0,
+      });
+    }
+    console.log("Element is in view: ", isInView);
+  }, [isInView]);
+
   return (
     <AnimatedPage>
       <div className="home">
@@ -31,7 +61,7 @@ function Home() {
         </div>
         <div className="skills">
           <h1> Skills</h1>
-          <ol className="list">
+          <motion.ol className="list" ref={ref} animate={animation}>
             <li className="item">
               <h2> Front-End</h2>
               <span>
@@ -51,7 +81,7 @@ function Home() {
               <h2>Tools</h2>
               <span>VS code, Photoshop, Illustrator</span>
             </li>
-          </ol>
+          </motion.ol>
         </div>
       </div>
     </AnimatedPage>
