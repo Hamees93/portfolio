@@ -49,6 +49,7 @@
 
 .projectItem h1 {
   font-size: 25px;
+  padding: 0 9px;
 }
 
 @media only screen and (max-width: 1300px) {

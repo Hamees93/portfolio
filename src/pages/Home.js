@@ -52,7 +52,7 @@ function Home() {
           </motion.h2>
           <div className="prompt">
             <p>
-              A software developer with a passion for learning and creating.
+              A full stack developer with a passion for learning and creating.
             </p>
             <LinkedInIcon />
             <EmailIcon />
@@ -66,7 +66,7 @@ function Home() {
               <h2> Front-End</h2>
               <span>
                 ReactJS, Redux, HTML, CSS, React Native, NPM, BootStrap,
-                MaterialUI, StyledComponents, Context API, SCSS
+                MaterialUI, StyledComponents, Context API, SCSS, JSX
               </span>
             </li>
             <li className="item">
