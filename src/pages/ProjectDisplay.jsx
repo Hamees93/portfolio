@@ -14,7 +14,12 @@ function ProjectDisplay() {
       <p>
         <b>Skills:</b> {project.skills}
       </p>
-      <GitHubIcon />
+      <div style={{ display: "flex", alignItems: "center" }}>
+        <a href={project.link} className="viewButton" target="blank">
+          View Website
+        </a>
+        {project.git && project.git != "" && <GitHubIcon />}
+      </div>
     </div>
   );
 }

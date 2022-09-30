@@ -18,11 +18,39 @@
 }
 
 .project p {
-  font-size: 40px;
+  font-size: 30px;
   color: #3e497a;
 }
 
 .project svg {
-  font-size: 60px;
+  font-size: 50px;
   color: #3e497a;
+}
+
+.viewButton {
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1em;
+  color: #fff;
+  border-radius: 25px;
+  margin: 0 18px;
+  background-size: 300% 300%;
+  color: white;
+  box-shadow: 1px 12px 20px 0px #3e497a90;
+  padding: 8px 20px;
+
+  background-image: linear-gradient(
+    to right,
+    #3e497a 0%,
+    #7c84aa 49%,
+    #3e497a 100%
+  );
+  transition: 0.5s;
+}
+
+.viewButton:hover {
+  background-position: right center;
+  color: white;
 }

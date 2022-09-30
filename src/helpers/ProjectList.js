@@ -1,6 +1,6 @@
 import adsin from "../assets/adsin.png";
 import PhoneSpex from "../assets/PhoneSpex.png";
-import Proj3 from "../assets/proj3.webp";
+import asspek from "../assets/asspek.png";
 import citywalk from "../assets/citywalk.png";
 import mjsoft from "../assets/mjsoft.png";
 import portfolio from "../assets/portfolio.png";
@@ -11,33 +11,39 @@ export const ProjectList = [
     image: adsin,
     skills:
       "ReactJS, JavaScript, HTML, CSS, SCSS, PHP, MySQL, Material-UI, NPM",
+    link: "https://www.adsin.lk/",
   },
   {
     name: "Phone Specifications Website",
     image: PhoneSpex,
     skills:
-      "Codeignier4, MySQL, JQuery, AJAX, HTML, CSS, JavaScript, Bootstrap",
+      "Codeigniter4, MySQL, JQuery, AJAX, HTML, CSS, JavaScript, Bootstrap",
+    link: "https://www.phonespex.com/",
   },
   {
     name: "Sports Academy Website",
-    image: Proj3,
+    image: asspek,
     skills:
-      "Codeignier4, MySQL, JQuery, AJAX, HTML, CSS, JavaScript, Bootstrap",
+      "Codeigniter4, MySQL, JQuery, AJAX, HTML, CSS, JavaScript, Bootstrap",
+    link: "https://www.asspek.lk/",
   },
   {
     name: "Ecommerce Textile Website",
     image: citywalk,
     skills: "WordPress, Woocommerce, Uncode Theme, Javascript, CSS",
+    link: "https://www.citywalk.lk/",
   },
   {
     name: "Digital Consultancy Website",
     image: mjsoft,
     skills:
       "ReactJS, JavaScript, HTML, CSS, SCSS, Material-UI, NPM, PHP, MySQL",
+    link: "https://www.mjsoft.lk/",
   },
   {
     name: "Portfolio Website",
     image: portfolio,
     skills: "ReactJS, JavaScript, HTML, CSS, Material-UI, NPM, Framer Motion",
+    link: "https://www.hamees.mjsoft.lk/",
   },
 ];
