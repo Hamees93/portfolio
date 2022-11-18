@@ -17,7 +17,14 @@ function ProjectItem({ image, name, id }) {
           navigate("/project/" + id);
         }}
       >
-        <div style={{ backgroundImage: `url(${image})` }} className="bgImage" />
+        <img
+          src={image}
+          alt=""
+          width="100%"
+          height="160px"
+          object-fit="cover"
+          loading="lazy"
+        />
         <h1> {name} </h1>
       </div>
     </motion.div>

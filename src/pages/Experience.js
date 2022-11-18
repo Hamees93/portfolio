@@ -97,13 +97,17 @@ function Experience() {
                 <CheckIcon style={{ marginRight: 5 }} />
                 Career Portal Website.
               </li>
+              <li style={{ display: "flex", alignItems: "start" }}>
+                <CheckIcon style={{ marginRight: 5 }} />
+                Online Booking Medical Consultancy Website.
+              </li>
             </ul>
           </p>
           <p>
             <span style={{ fontWeight: "normal" }}>Used Technologies:</span>
             <br />
-            PHP, Codeigniter, Laravel, HTML, CSS, JavaScript, JQuery, Ajax,
-            Bootstrap, MySQL, WordPress
+            PHP, Codeigniter4, HTML, CSS, JavaScript, JQuery, Ajax, Bootstrap,
+            MySQL
           </p>
         </VerticalTimelineElement>
 

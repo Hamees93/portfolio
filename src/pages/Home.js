@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
 import GithubIcon from "@material-ui/icons/GitHub";
+import FacebookIcon from "@material-ui/icons/Facebook";
 import "../styles/Home.css";
 import AnimatedPage from "../components/AnimatedPage";
 import {
@@ -10,6 +11,7 @@ import {
   useAnimation,
   useInView,
 } from "framer-motion";
+import { PhoneAndroidOutlined, WhatsApp } from "@material-ui/icons";
 
 function Home() {
   const ref = useRef(null);
@@ -54,10 +56,22 @@ function Home() {
             <p>
               A full stack developer with a passion for learning and creating.
             </p>
-            <LinkedInIcon />
-            <EmailIcon />
-            <GithubIcon />
+            <a
+              href="https://www.linkedin.com/in/hamees-mjm-a38b5a129/"
+              target="blank"
+            >
+              <LinkedInIcon />
+            </a>
+            <a href="https://www.facebook.com/mohamed.hamees.96" target="blank">
+              <FacebookIcon />
+            </a>
+            <a href="https://github.com/Hamees93" target="blank">
+              <GithubIcon />
+            </a>
           </div>
+          <a href="hamees_cv_22.pdf" className="cvButton" target="blank">
+            Download CV
+          </a>
         </div>
         <div className="skills">
           <h1> Skills</h1>
@@ -65,8 +79,8 @@ function Home() {
             <li className="item">
               <h2> Front-End</h2>
               <span>
-                ReactJS, Redux, HTML, CSS, React Native, NPM, BootStrap,
-                MaterialUI, StyledComponents, Context API, SCSS, JSX
+                ReactJS, Redux, HTML, CSS,SCSS, React Native, NPM, BootStrap,
+                MaterialUI, Tailwind, Context API
               </span>
             </li>
             <li className="item">
@@ -79,7 +93,7 @@ function Home() {
             </li>
             <li className="item">
               <h2>Tools</h2>
-              <span>VS code, Photoshop, Illustrator</span>
+              <span>VS code, Photoshop, Illustrator, Git</span>
             </li>
           </motion.ol>
         </div>

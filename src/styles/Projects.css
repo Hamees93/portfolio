@@ -1,15 +1,15 @@
 .projects {
-  width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 18px;
 }
 .projects .projectTitle {
   text-align: center;
   color: #3e497a;
-  font-size: 60px;
+  font-size: 45px;
   font-weight: bolder;
 }
 
@@ -26,10 +26,12 @@
 .projectItem {
   border-radius: 15px;
   width: 300px;
-  height: 300px;
-  margin: 40px;
+  height: 255px;
+  margin: 27px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
+  overflow: hidden;
+  max-width: 75vw;
 }
 .projectItem:hover {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
@@ -48,7 +50,7 @@
 }
 
 .projectItem h1 {
-  font-size: 25px;
+  font-size: 22px;
   padding: 0 9px;
 }
 
@@ -69,7 +71,10 @@
     width: 100%;
   }
   .projectItem {
-    width: 300px;
-    height: 300px;
+    height: auto;
+    margin: 18px;
+  }
+  .projects .projectTitle {
+    font-size: 36px;
   }
 }

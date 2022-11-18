@@ -29,8 +29,33 @@
   font-size: 30px;
 }
 .prompt svg {
-  font-size: 60px;
-  margin: 5px;
+  font-size: 50px;
+  margin: 9px;
+  color: white;
+}
+.cvButton {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 25px;
+  margin: 18px;
+  background-size: 300% 300%;
+  color: white;
+  box-shadow: 1px 12px 20px 0px #3e497a90;
+  padding: 12px 22px;
+
+  background-image: linear-gradient(
+    to right,
+    #3e497a 0%,
+    #7c84aa 49%,
+    #3e497a 100%
+  );
+  transition: 0.5s;
+}
+
+.cvButton:hover {
+  background-position: right center;
   color: white;
 }
 
@@ -50,7 +75,9 @@
 
 .skills .list {
   list-style: none;
-  width: 60%;
+  /* width: 60%; */
+  padding: 36px;
+  margin: 0;
 }
 .skills .list .item {
   margin-bottom: 45px;
