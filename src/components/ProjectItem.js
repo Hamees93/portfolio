@@ -19,7 +19,7 @@ function ProjectItem({ image, name, id }) {
       >
         <img
           src={image}
-          alt=""
+          alt={name}
           width="100%"
           height="160px"
           object-fit="cover"
